@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products</title>
+  <link rel="stylesheet" href="products.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"/>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg py-2 mb-0"> 
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4" href="#"><img src="images/logo.png" alt=""></a>
+      <div class="d-flex gap-3 order-lg-2">
+        <div id="cartIconContainer" style="position: relative; cursor: pointer;">
+          <i class="bi bi-cart text-light fs-5" id="cartIcon"></i>
+          <span id="cartBadge" style="position: absolute; top: -5px; right: -10px; background: skyblue; color: black; border-radius: 50%; padding: 2px 6px; font-size: 0.75rem; display: none;">0</span>
+        </div>
+        
+        <i class="bi bi-person-fill text-light fs-5"></i>
+        <i class="bi bi-telephone-fill text-light fs-5"></i>
+      </div>
+      <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light active" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="sale.html">Sale</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <!-- Best Sellers -->
+  <section class="products py-5" id="best-sellers">
+    <div class="container">
+      <h2 class="text-center mb-4">Best Sellers</h2>
+      <div id="carouselBestSellers" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/baggy_jeabs.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 1</h5>
+                  <p class="price">$12.00</p>
+                  <div class="star-rating">★★★★☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div> 
+              </div>
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/blue_shirt.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 2</h5>
+                  <p class="price">$10.00</p>
+                  <div class="star-rating">★★★☆☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/white mugs.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 3</h5>
+                  <p class="price">$5.00</p>
+                  <div class="star-rating">★★★★★</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/plain_white.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 4</h5>
+                  <p class="price">$9.00</p>
+                  <div class="star-rating">★★★★☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/tote bag.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 5</h5>
+                  <p class="price">$10.00</p>
+                  <div class="star-rating">★★★★☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/tracsuit.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 6</h5>
+                  <p class="price">$15.00</p>
+                  <div class="star-rating">★★★☆☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/coffe cup.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 7</h5>
+                  <p class="price">$9.99</p>
+                  <div class="star-rating">★★★★☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="product-card text-center p-3">
+                  <img src="images/glass cups.png" class="img-fluid" alt="">
+                  <h5 class="mt-2">Product 8</h5>
+                  <p class="price">$12.00</p>
+                  <div class="star-rating">★★★★☆</div>
+                  <button class="btn btn-primary mt-2">Add Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBestSellers" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBestSellers" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- T-shirt Section -->
+  <div class="container" id="tshirts">
+    <h2 class="text-center mb-4">T-shirt</h2>
+    <div id="carouselTshirts" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 1.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Baggy Jeans</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 2.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Hoodie</h5>
+                <p class="price">$10.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 3.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Tracsuit</h5>
+                <p class="price">$12.00</p>
+                <div class="star-rating">★★★★★</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 4.png" class="img-fluid" alt="">
+                <h5 class="mt-2">White T-shirt</h5>
+                <p class="price">$9.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 5.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Product 5</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 6.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Product 6</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 7.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Product 7</h5>
+                <p class="price">$9.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/t-shirt 8.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Product 8</h5>
+                <p class="price">$8.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTshirts" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselTshirts" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+  <!--Mugs-->
+  <div class="container" id="mugs">
+    <h2 class="text-center mb-4">Mugs</h2>
+    <div id="carouselmugs" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 1.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Mugs</h5>
+                <p class="price">$12.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 2.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Couple Mugs</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 3.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Daisy Mug</h5>
+                <p class="price">$20.00</p>
+                <div class="star-rating">★★★★★</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 4.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Heart Patterned Mug</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 5.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Hello Kitty Mug</h5>
+                <p class="price">$20.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 6.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Light Pink Mug</h5>
+                <p class="price">$10.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 7.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Pink Coffe Mug</h5>
+                <p class="price">$9.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/mug 8.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Family Mugs</h5>
+                <p class="price">$25.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselmugs" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselmugs" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+  <!--Hoodie-->
+  <div class="container" id="hoodies">
+    <h2 class="text-center mb-4">Hoodies</h2>
+    <div id="carouselhoodies" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 1.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Baggy Hoodie</h5>
+                <p class="price">$25.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 2.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Spiderman Unisex Hoodie</h5>
+                <p class="price">$30.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 3.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Whale Hoodie</h5>
+                <p class="price">$25.00</p>
+                <div class="star-rating">★★★★★</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie  4.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Bunny Hoodie</h5>
+                <p class="price">$25.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 5.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Pink Hoodie</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 6.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Beige Hoodie</h5>
+                <p class="price">$20.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 7.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Motif Hoodie</h5>
+                <p class="price">$40.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/hoodie 8.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Bunny Hoodie</h5>
+                <p class="price">$35.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselhoodies" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselhoodies" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+  <!--Tote Bags-->
+  <div class="container" id="tote-bags">
+    <h2 class="text-center mb-4">Tote Bags</h2>
+    <div id="carouseltote-bags" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 1.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Denim Tote Bag</h5>
+                <p class="price">$35.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 2.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Cluck Bag</h5>
+                <p class="price">$30.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 3.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Cute Tote Bag</h5>
+                <p class="price">$25.00</p>
+                <div class="star-rating">★★★★★</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 4.png" class="img-fluid" alt="">
+                <h5 class="mt-2">The Tote Bag</h5>
+                <p class="price">$50.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 5.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Mickey Tote Bag</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 6.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Heart Tote Bag</h5>
+                <p class="price">$15.00</p>
+                <div class="star-rating">★★★☆☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 7.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Alo Tote Bag</h5>
+                <p class="price">$35.00</p> 
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card text-center p-3">
+                <img src="images/tote 8.png" class="img-fluid" alt="">
+                <h5 class="mt-2">Beige Tote Bag</h5>
+                <p class="price">$30.00</p>
+                <div class="star-rating">★★★★☆</div>
+                <button class="btn btn-primary mt-2">Add Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouseltote-bags" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouseltote-bags" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <br>
+
+
+
+  <!-- Footer -->
+  <footer class="container-fluid pt-5 py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 text-center text-md-start">
+          <img src="images/logo.png" alt="Company Logo" class="d-block mb-2" width="150">
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>Products</h6>
+          <ul class="list-unstyled text-small">
+            <li><a href="#hoodies">Hoodies</a></li>
+            <li><a href="#tshirts">T-shirts</a></li>
+            <li><a href="#mugs">Mugs</a></li>
+            <li><a href="#tote-bags">Tote bags</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>Resources</h6>
+          <ul class="list-unstyled text-small">
+            <li><a href="resources.html">Help Centre</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>Social</h6>
+          <ul class="list-unstyled text-small">
+            <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="bi bi-tiktok"></i> Tiktok</a></li>
+            <li><a href="#"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    localStorage.removeItem('cartItems'); // Clears cart on page refresh
+  
+    const cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const addButtons = document.querySelectorAll('.btn.btn-primary');
+    const cartBadge = document.getElementById('cartBadge');
+    const cartIconContainer = document.getElementById('cartIconContainer');
+  
+    addButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const productCard = button.closest('.product-card');
+        const productName = productCard.querySelector('h5').innerText;
+        const productPriceText = productCard.querySelector('.price').innerText;
+        const productPrice = parseFloat(productPriceText.replace('$', ''));
+  
+        cart.push({ name: productName, price: productPrice });
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+  
+        cartBadge.innerText = cart.length;
+        cartBadge.style.display = 'inline-block';
+      });
+    });
+  
+    cartIconContainer.addEventListener('click', () => {
+      window.location.href = 'checkout.html';
+    });
+  
+    // Show cart count on load if items exist
+    if (cart.length > 0) {
+      cartBadge.innerText = cart.length;
+      cartBadge.style.display = 'inline-block';
+    }
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>

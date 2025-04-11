@@ -1,0 +1,199 @@
+/* Global Styles */
+* {
+  margin: 0;
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+/*nav*/
+/* Default styles for nav links */
+/* Default styles for nav links */
+.nav-link {
+  color: lightgray !important;
+  font-weight: normal;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Make only the Home link bold */
+.nav-link.active {
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Hover effect for other nav links */
+.nav-link:not(.active):hover {
+  font-weight: bold;
+  color: white !important;
+}
+
+
+
+
+/* Layer4 Section */
+
+.layer4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns image to the left, text to the right */
+  padding: 10px;
+  overflow: hidden;
+  height: 450px; /* Ensures there's no overflow */
+}
+
+.image-container {
+  flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+.layer4 img {
+  height: 550px;
+  width: 600px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  padding-left: 20px; /* Adds space between image and text */
+}
+
+/*reviews*/
+.custom-card {
+  width: 280px; /* Reduced width slightly to fit 4 in one row */
+  height: 350px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.star-rating {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+
+/* Hide the carousel arrows (upward and downward) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none; /* Hides the control arrows */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/*Brands */
+.trust  {
+  background-color: rgb(38, 37, 37);
+  height: 200px;
+  overflow: hidden;
+}
+
+.title-container {
+  text-align: center; /* Center the title */
+  color: white;  /* Text color */
+  padding: 10px; /* Add padding around the title */
+  border-radius: 10px; /* Rounded corners for the title background */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.brands {
+  display: flex;
+  justify-content: center;  /* Center the logos */
+  align-items: center;
+  gap: 20px;  /* Increase spacing between logos */
+  list-style: none;
+  padding: 0;
+  padding: 20px; /* Optional: Add padding around the section */
+}
+
+.brands h3 {
+  text-align: center; /* Centers the text */
+  font-size: 1.5rem; /* Adjust size if needed */
+  font-weight: bold; /* Make it stand out */
+  margin-bottom: 20px; /* Add space below */
+  background-color: #4CAF50; /* Background color for the title */
+  color: white;  /* Text color */
+  padding: 10px; /* Add padding around the title */
+  border-radius: 10px; /* Rounded corners for the title background */
+  padding-top: 20px;
+}
+
+.brands li {
+  display: flex;
+}
+
+.brands img {
+  width: 80px;  /* Increased size */
+  height: 80px;
+  border-radius: 50%;  /* Makes them circular */
+  object-fit: cover;  /* Ensures the image fills the circle */
+  filter: grayscale(100%);  /* Converts images to black and white */
+  background-color: #fff; /* White background for the images */
+  padding: 10px; /* Padding around the image to create space inside the circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the images */
+}
+
+/* Optional: Restore color on hover */
+.brands img:hover {
+  filter: grayscale(0%);
+  transition: 0.3s ease-in-out;
+}
+
+/*integration */
+.integration {
+  display: flex;
+  align-items: center; /* Aligns vertically */
+  justify-content: space-between; /* Distributes space between the elements */
+}
+
+.text-content {
+  flex: 1; /* Allows the text to take up available space */
+  padding-left: 20px; /* Adds space between text and image */
+}
+
+.image-container {
+  flex: 1; /* Allows the image to take up available space */
+  text-align: center; /* Centers the image within the container */
+}
+
+.hoodies {
+  width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Set a maximum size for the image */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+
+/*footer */
+footer {
+  width: 100vw; /* Full viewport width */
+  background-color: rgb(38, 37, 37) !important;
+  color: white !important;
+  padding: 40px 0;
+}
+
+/* Ensure text and links are white */
+footer h5,
+footer small,
+footer a {
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Adjust link hover color */
+footer a:hover {
+  color: #ccc !important;
+}
+
+/* Override Bootstrap's text colors */
+.text-body-secondary, 
+.link-secondary {
+  color: white !important;
+}
